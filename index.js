@@ -1,4 +1,4 @@
-#!/usr/bin/node
+#!/usr/bin/env node
 
 var request = require('superagent');
 var elegantStatus = require('elegant-status');
