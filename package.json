@@ -1,0 +1,28 @@
+{
+  "name": "my-latest-stars",
+  "version": "1.0.0",
+  "repository": "git@github.com:DKunin/my-latest-stars.git",
+  "description": "Fetch last n github stars you made, just to freshen up the memory",
+  "main": "index.js",
+  "scripts": {
+  },
+  "keywords": [
+    "stars",
+    "github",
+    "personal"
+  ],
+  "author": "DKunin",
+  "license": "MIT",
+  "engines": {
+    "node": ">=0.8.0"
+  },
+  "preferGlobal": "true",
+  "bin": {
+    "my-latest-stars": "./index.js"
+  },
+  "dependencies": {
+    "elegant-status": "^1.0.0",
+    "superagent": "^1.7.2",
+    "yargs": "^4.2.0"
+  }
+}
