@@ -4,6 +4,8 @@ Simple cli script to show you your n last stars on github.
 
 ## Usage
 
+There must be global GIT_HUB_USER variable set to your github username.
+
         Usage: my-latest-stars [options]
 
         Options:
