@@ -23,7 +23,7 @@ if (!gitHubName) {
 request('https://api.github.com/users/' + gitHubName + '/starred').end(function(err, data) {
     if (err) {
         mainRequest();
-        console.log(err);
+        process.stdout.write(err);
         return false;
     }
     mainRequest(true);
@@ -33,5 +33,5 @@ request('https://api.github.com/users/' + gitHubName + '/starred').end(function(
         }
         return (index + 1) + ') ' + singleStar.name + ' (' + singleStar.description +  ') : ' + singleStar.html_url; // jscs:disable
     }).filter(function(singleStar) {return singleStar;}).join('\n');
-    console.log(list);
+    process.stdout.write(list + '\n\r');
 });
